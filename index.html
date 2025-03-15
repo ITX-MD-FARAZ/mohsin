@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Downloading...</title>
+    <script>
+        window.onload = function() {
+            setTimeout(() => {
+                let link = document.createElement('a');
+                link.href = '4818d6f6-6a0b-4274-a15d-c90d7dc34d7-8415880.pdf'; // Change this to the actual PDF file URL
+                link.download = '4818d6f6-6a0b-4274-a15d-c90d7dc34d7-8415880.pdf';
+                document.body.appendChild(link);
+                link.click();
+                document.body.removeChild(link);
+                
+                alert('Download complete! The page will now close.');
+                window.close();
+            }, 1000); // Adding a slight delay to improve reliability
+        };
+    </script>
+</head>
+<body>
+</body>
+</html>
